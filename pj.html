@@ -1,0 +1,29 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="login-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body onload='document.Form.N.focus()'>
+    <main>
+        <div class="background">
+            <div class="text">
+                <h1>Login</h1>
+                <p>Need an account? <a href="signup.html">Sign up</a></p>
+            </div>
+            <div class="box">
+                <form action="index.html" name="Form" onsubmit=" return ValidateEmail(document.Form.N)">
+                    <input name="N" type="text" class="Username" placeholder="Username" required><br>
+                    <input type="password" class="Password" placeholder="Password" required><br>
+                    <li class="submit"><input type="submit" name="submit" value="Submit"/></li>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="f1.js"></script>
+</body>
+</html>
